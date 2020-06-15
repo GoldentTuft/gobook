@@ -1,0 +1,13 @@
+p9
+    ex1.1 o
+    ex1.2 x
+    ex1.3 x
+p14
+    ex1.4 o
+p17
+    ex1.5 o
+    ex1.6 o
+p19
+    ex1.7 o
+    ex1.8 o
+    ex1.9 o

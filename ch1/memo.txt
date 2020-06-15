@@ -1,6 +1,0 @@
-p9
-    ex1 o
-    ex2 x
-    ex3 x
-p14
-    ex4 o
