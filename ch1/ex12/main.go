@@ -1,4 +1,4 @@
-// server3は最小限の「echo」とカウンタ機能を持つサーバーです。
+// リサジュー(lissajous)機能を持つサーバーです。
 package main
 
 import (
