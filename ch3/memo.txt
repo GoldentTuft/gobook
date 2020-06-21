@@ -24,3 +24,19 @@ p50
     ex2.3 x
     ex2.4 x
     ex2.5 x
+p67
+    ex3.1 x
+    ex3.2 x
+    ex3.3 x
+    ex3.4 o
+p69
+    ex3.5 x
+    ex3.6 x
+p70
+    ex3.7 x
+    ex3.8 x
+    ex3.9 x
+p83
+    ex3.10 o
+    ex3.11 x
+    ex3.12 x
