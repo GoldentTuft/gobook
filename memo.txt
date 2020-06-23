@@ -45,3 +45,13 @@ p87
 p94
     ex4.1 o
     ex4.2 o
+p104
+    ex4.3 o
+    ex4.4 o
+p105
+    ex4.5 x
+    ex4.6 x
+    ex4.7 x
+p112
+    ex4.8 x
+    ex4.9 x
