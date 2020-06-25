@@ -56,8 +56,10 @@ p112
     ex4.8 x
     ex4.9 o
 p127
-    ex4.10 x
+    ex4.10 o
     ex4.11 x
     ex4.12 x
 P128
-    ex4.13 x
+    ex4.13 o
+p133
+    ex4.14 x
