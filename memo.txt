@@ -75,3 +75,10 @@ p153
     ex5.7 x
     ex5.8 o
     ex5.9 o
+p159
+    ex5.10 o
+    ex5.11 o
+    ex5.12 x
+    ex5.13 x
+p160
+    ex5.14 x
