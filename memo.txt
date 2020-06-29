@@ -78,7 +78,13 @@ p153
 p159
     ex5.10 o
     ex5.11 o
-    ex5.12 x
+    ex5.12 o
     ex5.13 x
 p160
     ex5.14 x
+p163
+    ex5.15 o
+    ex5.16 o
+    ex5.17 x
+p169
+    ex5.18 x
