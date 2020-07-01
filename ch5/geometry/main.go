@@ -36,6 +36,12 @@ func (path Path) Distance() float64 {
 	return sum
 }
 
+// ScaleBy はスケールする
+func (p *Point) ScaleBy(factor float64) {
+	p.X *= factor
+	p.Y *= factor
+}
+
 func main() {
 	p := Point{1, 2}
 	q := Point{4, 6}
@@ -49,4 +55,9 @@ func main() {
 		{1, 1},
 	}
 	fmt.Println(perim.Distance())
+
+	p.ScaleBy(2)
+	fmt.Println(p)
+
+	fmt.Println(Point{1, 2}.Distance(q))
 }
