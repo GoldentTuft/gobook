@@ -90,3 +90,14 @@ p169
     ex5.18 o
 p175
     ex5.19 o
+p191
+    ex6.1 o
+p192
+    ex6.2 o
+    ex6.3 x
+    ex6.4 o
+    ex6.5 x
+p200
+    ex7.1 x
+    ex7.2 x
+    ex7.3 x
