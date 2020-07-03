@@ -17,7 +17,7 @@ p21
 p25
     ex1.12 o
 p47
-    ex2.1 x
+    ex2.1 o
 p48
     ex2.2 x
 p50
@@ -98,6 +98,13 @@ p192
     ex6.4 o
     ex6.5 x
 p200
-    ex7.1 x
-    ex7.2 x
+    ex7.1 o
+    ex7.2 o
     ex7.3 x
+p201
+    ex7.4 o
+p202
+    ex7.5 x
+p209
+    ex7.6 o
+    ex7.7 o

@@ -1,0 +1,5 @@
+celsiusFlagはCelsius構造体が埋め込まれており、
+Celsius型に関連付けられたString()メソッドが格上げされ、
+celsiusFlag型がCelsius型のString()を持つ。
+そのString()が呼ばれるから。
+p185
