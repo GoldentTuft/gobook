@@ -1,3 +1,5 @@
+// https://github.com/ray-g/gopl/tree/master/ch07/ex7.14
+// 写経
 package main
 
 import (
@@ -21,6 +23,7 @@ func main() {
 		{"5 / 9 * (F - 32)", eval.Env{"F": -40}, "-40"},
 		{"5 / 9 * (F - 32)", eval.Env{"F": 32}, "0"},
 		{"5 / 9 * (F - 32)", eval.Env{"F": 212}, "100"},
+		{"a!", eval.Env{"a": 4}, ""},
 	}
 
 	for _, test := range tests {
