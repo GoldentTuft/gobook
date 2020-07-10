@@ -18,11 +18,13 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	defer conn.Close()
-
-	go mustCopy(os.Stdout, conn)
-
-	// 入力?サーバー側?が終了してしまうと、ここが失敗して、
-	// メインが死ぬことによって上のゴルーチンも終了してしまう?
+	done := make(chan struct{})
+	go func() {
+		io.Copy(os.Stdout, conn) // 注意: エラーを無視している
+		log.Println("done")
+		done <- struct{}{} // メインゴルーチンへ通知
+	}()
 	mustCopy(conn, os.Stdin)
+	conn.Close()
+	<-done // バックグラウンドのゴルーチンが完了するのを待つ
 }
