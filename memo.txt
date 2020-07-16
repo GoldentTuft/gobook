@@ -145,8 +145,8 @@ p292
     ex8.10 o
     ex8.11 x
 p295
-    ex8.12 x
-    ex8.13 x
+    ex8.12 o
+    ex8.13 o
     ex8.14 x
 p296
     ex8.15 x
