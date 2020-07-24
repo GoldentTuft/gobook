@@ -1,3 +1,5 @@
+// https://github.com/YoshikiShibata/gpl/tree/master/ch09/ex03
+// 写経
 package memo
 
 // Func はメモ化される関数の型です。
