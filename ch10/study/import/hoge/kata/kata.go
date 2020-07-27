@@ -1,4 +1,4 @@
-package kana
+package kata
 
 import (
 	"fmt"
@@ -8,8 +8,8 @@ import (
 )
 
 func print() {
-	fmt.Print("ほげ")
+	fmt.Print("ホゲ")
 }
 func init() {
-	hoge.RegisterFormat("kana", print)
+	hoge.RegisterFormat("kata", print)
 }
