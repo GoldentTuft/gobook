@@ -72,5 +72,4 @@ func TestCharCount(t *testing.T) {
 			t.Errorf("invalid is %d, but want %d\n", invalid, test.invalid)
 		}
 	}
-
 }

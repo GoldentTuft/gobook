@@ -58,3 +58,34 @@ func TestRandomPalindromes(t *testing.T) {
 	}
 
 }
+
+// randomNonPalindrome は擬似乱数生成器から長さと内容が計算された
+// 回文でない文を返します。
+func randomNonPalindrome(rng *rand.Rand) string {
+	for {
+		n := rng.Intn(25) // 24までのランダムな長さ
+		runes := make([]rune, n)
+		for i := 0; i < n; i++ {
+			r := rune(rng.Intn(0x1000)) // "/u0999"までのランダムなルーン
+			runes[i] = r
+		}
+		if !IsPalindrome(string(runes)) {
+			return string(runes)
+		}
+	}
+}
+
+func TestRandomNonPalindromes(t *testing.T) {
+	// 疑似乱数生成器を初期化する。
+	seed := time.Now().UTC().UnixNano()
+	t.Logf("Random seed: %d", seed)
+	rng := rand.New(rand.NewSource(seed))
+
+	for i := 0; i < 1000; i++ {
+		p := randomNonPalindrome(rng)
+		if IsPalindrome(p) {
+			t.Errorf("IsPalindrome(%q) = true, but want false", p)
+		}
+	}
+
+}
