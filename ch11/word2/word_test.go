@@ -1,6 +1,7 @@
 package word
 
 import (
+	"fmt"
 	"math/rand"
 	"testing"
 	"time"
@@ -57,4 +58,39 @@ func TestRandomPalindromes(t *testing.T) {
 		}
 	}
 
+}
+
+func BenchmarkIsPalindrome(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		ok := IsPalindrome("A man, a plan, a canal: Panama")
+		if !ok {
+			b.Errorf("IsPalindrome benchmark failed.")
+		}
+	}
+}
+
+func BenchmarkIsPalindromeB(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		ok := IsPalindromeB("A man, a plan, a canal: Panama")
+		if !ok {
+			b.Errorf("IsPalindromeB benchmark failed.")
+		}
+	}
+}
+
+func BenchmarkIsPalindromeC(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		ok := IsPalindromeC("A man, a plan, a canal: Panama")
+		if !ok {
+			b.Errorf("IsPalindromeC benchmark failed.")
+		}
+	}
+}
+
+func ExampleIsPalindrome() {
+	fmt.Println(IsPalindrome("A man, a plan, a canal: Panama"))
+	fmt.Println(IsPalindrome("palindrome"))
+	// Output:
+	// true
+	// false
 }
